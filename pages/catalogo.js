@@ -1,9 +1,5 @@
-
+import MainTemplate from "../components/MainTemplate";
 
 export default function Catalogo() {
-  return (
-    <div >
-      Catalogo
-    </div>
-  );
+  return <MainTemplate>Catalogo</MainTemplate>;
 }
