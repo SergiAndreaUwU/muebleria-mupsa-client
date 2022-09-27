@@ -2,6 +2,7 @@ import styles from "./Footer.module.sass";
 import ListGroup from "react-bootstrap/ListGroup";
 import UbicationImage from "/public/ubication.jpg";
 import Image from "next/image";
+import { Container } from "react-bootstrap";
 
 const ubication =
   "Calle torrecillas #5 Colonia la Grangena Municipio de Poncitlan";
@@ -11,6 +12,7 @@ const contactEmail = "MupsaForniture@gmail.com";
 
 function Footer() {
   return (
+    <Container>
     <footer id="footer" className={styles.footer}>
       Datos de contacto:
       <ListGroup variant="flush">
@@ -34,6 +36,7 @@ function Footer() {
         
       </ListGroup>
     </footer>
+    </Container>
   );
 }
 

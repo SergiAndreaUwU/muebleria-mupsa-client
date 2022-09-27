@@ -9,17 +9,14 @@ function MainTemplate({ children }) {
   return (
     <>
       <FurnitureNavbar />
-      <Container>
-        <Head>
-          <title>Muebleria Mupsa</title>
-          <meta name="description" content="Muebleria Mupsa" />
-          <link rel="icon" href="/muebleria_mupsa_ico.ico" />
-        </Head>
 
-        {children}
-        <Footer/>
-        
-      </Container>
+          <Head>
+            <title>Muebleria Mupsa</title>
+            <meta name="description" content="Muebleria Mupsa" />
+            <link rel="icon" href="/muebleria_mupsa_ico.ico" />
+          </Head>
+          <div style={{ backgroundColor: "white" }}> {children}</div>
+          <Footer />
     </>
   );
 }
