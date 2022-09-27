@@ -1,18 +1,111 @@
 import { Container } from "react-bootstrap";
+import { lazy, Suspense } from "react";
 import MainTemplate from "../components/MainTemplate";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "next/image";
+
+import MuebleImg1 from "/public/catalogo/mueble1.jpeg";
+import MuebleImg2 from "/public/catalogo/mueble2.jpeg";
+import MuebleImg3 from "/public/catalogo/mueble3.jpeg";
+import MuebleImg4 from "/public/catalogo/mueble4.jpeg";
+import MuebleImg5 from "/public/catalogo/mueble5.jpeg";
+import MuebleImg6 from "/public/catalogo/mueble6.jpeg";
+import MuebleImg7 from "/public/catalogo/mueble7.jpeg";
+import MuebleImg8 from "/public/catalogo/mueble8.jpeg";
+import MuebleImg9 from "/public/catalogo/mueble9.jpeg";
+
+import MuebleImg10 from "/public/catalogo/mueble10.jpeg";
+import MuebleImg11 from "/public/catalogo/mueble11.jpeg";
+import MuebleImg12 from "/public/catalogo/mueble12.jpeg";
+import MuebleImg13 from "/public/catalogo/mueble13.jpeg";
+import MuebleImg14 from "/public/catalogo/mueble14.jpeg";
+import MuebleImg15 from "/public/catalogo/mueble15.jpeg";
+import MuebleImg16 from "/public/catalogo/mueble16.jpeg";
+import MuebleImg17 from "/public/catalogo/mueble17.jpeg";
+import MuebleImg18 from "/public/catalogo/mueble18.jpeg";
+import MuebleImg19 from "/public/catalogo/mueble19.jpeg";
+
+import MuebleImg20 from "/public/catalogo/mueble20.jpeg";
+import MuebleImg21 from "/public/catalogo/mueble21.jpeg";
+import MuebleImg22 from "/public/catalogo/mueble22.jpeg";
+import MuebleImg23 from "/public/catalogo/mueble23.jpeg";
+import MuebleImg24 from "/public/catalogo/mueble24.jpeg";
+import MuebleImg25 from "/public/catalogo/mueble25.jpeg";
+import MuebleImg26 from "/public/catalogo/mueble26.jpeg";
+import MuebleImg27 from "/public/catalogo/mueble27.jpeg";
+import MuebleImg28 from "/public/catalogo/mueble28.jpeg";
+import MuebleImg29 from "/public/catalogo/mueble29.jpeg";
+
+import MuebleImg30 from "/public/catalogo/mueble30.jpeg";
+import MuebleImg31 from "/public/catalogo/mueble31.jpeg";
+import MuebleImg32 from "/public/catalogo/mueble32.jpeg";
+import MuebleImg33 from "/public/catalogo/mueble33.jpeg";
+import MuebleImg34 from "/public/catalogo/mueble34.jpeg";
+import MuebleImg35 from "/public/catalogo/mueble35.jpeg";
+import MuebleImg36 from "/public/catalogo/mueble36.jpeg";
+import MuebleImg37 from "/public/catalogo/mueble37.jpeg";
+import MuebleImg38 from "/public/catalogo/mueble38.jpeg";
+import MuebleImg39 from "/public/catalogo/mueble39.jpeg";
+
+import MuebleImg40 from "/public/catalogo/mueble40.jpeg";
+import MuebleImg41 from "/public/catalogo/mueble41.jpeg";
+import CatalogueCarousel from "../components/CatalogueCarousel";
 
 export default function Catalogo() {
-  return <MainTemplate>
-    <Container >
-      <div style={{backgroundColor:"#FFEBC1"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in velit eu tortor varius molestie. Vestibulum laoreet in quam vel accumsan. Maecenas ac arcu nec erat vestibulum sodales. Nulla lacinia urna eget nisi lobortis blandit. Aenean id justo consectetur, placerat dui iaculis, sagittis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent faucibus sem sed diam facilisis auctor. Mauris viverra, metus ac vestibulum porta, lorem mi imperdiet justo, sit amet dignissim odio ipsum non felis. Aliquam tristique dui vel maximus molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+  const carouselImages = [
+    MuebleImg1,
+    MuebleImg2,
+    MuebleImg3,
+    MuebleImg4,
+    MuebleImg5,
+    MuebleImg6,
+    MuebleImg7,
+    MuebleImg8,
+    MuebleImg9,
 
-Etiam pharetra venenatis velit fringilla elementum. Sed et sem convallis, varius diam euismod, ultrices nisi. Nulla et nisl non elit gravida ullamcorper ac ac metus. Donec vitae suscipit mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id mauris non enim hendrerit ultrices. In ex nisi, iaculis sed neque ac, molestie imperdiet velit. Aenean nec ullamcorper nulla. Quisque hendrerit lorem vulputate dictum pulvinar.
+    MuebleImg10,
+    MuebleImg11,
+    MuebleImg12,
+    MuebleImg13,
+    MuebleImg14,
+    MuebleImg15,
+    MuebleImg16,
+    MuebleImg17,
+    MuebleImg18,
+    MuebleImg19,
 
-Etiam varius turpis scelerisque lobortis finibus. Sed facilisis eros vel purus placerat, et interdum dolor ultricies. Integer libero sem, congue a sapien non, feugiat rutrum tellus. Quisque id ex vel dolor porttitor ullamcorper. Fusce sed sapien pellentesque lorem faucibus fermentum sodales eget ipsum. Vestibulum quis laoreet justo, ut interdum augue. Praesent fermentum ante ac tempor fermentum. Etiam auctor condimentum lectus, quis posuere nulla viverra lobortis. Aliquam fringilla tincidunt erat sed suscipit. Praesent tincidunt eu eros vel maximus.
+    MuebleImg20,
+    MuebleImg21,
+    MuebleImg22,
+    MuebleImg23,
+    MuebleImg24,
+    MuebleImg25,
+    MuebleImg26,
+    MuebleImg27,
+    MuebleImg28,
+    MuebleImg29,
 
-Aliquam quis sapien euismod, efficitur enim vel, aliquet neque. Vestibulum dapibus nulla et tempus sodales. Morbi sit amet gravida felis. Pellentesque eu iaculis quam. Proin scelerisque enim ante. Donec aliquam gravida cursus. Praesent consequat quam vitae enim dictum suscipit. Nunc sed odio tortor. Nulla ullamcorper diam nec gravida rhoncus. Mauris non ex in massa aliquam porttitor. Suspendisse non ligula accumsan, convallis arcu ut, tincidunt neque. Duis accumsan eros a nisl viverra bibendum. Nulla ut aliquam urna. Cras tincidunt est eu ex malesuada accumsan. Maecenas mattis eleifend lorem, sit amet fermentum justo lobortis ut.
+    MuebleImg30,
+    MuebleImg31,
+    MuebleImg32,
+    MuebleImg33,
+    MuebleImg34,
+    MuebleImg35,
+    MuebleImg36,
+    MuebleImg37,
+    MuebleImg38,
+    MuebleImg39,
 
-Nam venenatis nulla at orci commodo, nec egestas metus faucibus. Duis consequat, odio a convallis venenatis, libero lectus porttitor ex, a fermentum nibh dolor et augue. Vivamus imperdiet quam ut nisl dictum feugiat. Suspendisse consequat, magna eget placerat facilisis, metus ex ullamcorper sapien, id cursus odio dui eget dui. Proin imperdiet purus et ultrices eleifend. Sed id ipsum nec mauris commodo ornare vel sit amet neque. Pellentesque aliquam, purus a bibendum volutpat, justo lacus convallis nunc, vitae venenatis eros dolor non urna.</div>
-    </Container>
-  </MainTemplate>;
+    MuebleImg40,
+    MuebleImg41,
+  ];
+
+  return (
+    <MainTemplate>
+      <Container style={{marginTop:"3vh"}}>
+        <CatalogueCarousel imagesArray={carouselImages} />
+      </Container>
+    </MainTemplate>
+  );
 }
