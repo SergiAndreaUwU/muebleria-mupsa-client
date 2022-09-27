@@ -1,18 +1,24 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import styles from "./FurnitureNavbar.module.sass"
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import styles from "./FurnitureNavbar.module.sass";
+import Logo from "/public/muebleria_mupsa_ico.ico";
+import Image from "next/image";
 
 function FurnitureNavbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className={styles.navbar}>
-      <Container >
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      sticky="top"
+      className={styles.navbar}
+    >
+      <Container>
         <Navbar.Brand href="/">MUPSA</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">MUPSA</Nav.Link>
             <Nav.Link href="/catalogo">Catalogo</Nav.Link>
             <Nav.Link href="/quienesSomos">Quienes somos</Nav.Link>
           </Nav>
