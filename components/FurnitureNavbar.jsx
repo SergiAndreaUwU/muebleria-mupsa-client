@@ -6,7 +6,7 @@ import styles from "./FurnitureNavbar.module.sass"
 
 function FurnitureNavbar() {
   return (
-    <Navbar bg="light" expand="lg" className={styles.navbar}>
+    <Navbar bg="light" expand="lg" sticky="top" className={styles.navbar}>
       <Container>
         <Navbar.Brand href="/">MUPSA</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
