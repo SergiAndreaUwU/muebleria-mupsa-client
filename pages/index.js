@@ -20,7 +20,7 @@ export default function Home() {
           style={{
             display: "flex",
             width: "100%",
-            height: "100%",
+            height: "80vh",
             backgroundColor: "black",
           }}
         >
@@ -31,7 +31,7 @@ export default function Home() {
         <div
           style={{
             width: "100%",
-            height: "15vh",
+            height: "20vh",
             backgroundColor: "black",
             color: "white",
             textAlign: "center",
