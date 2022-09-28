@@ -37,7 +37,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          <h1>
+          <h1 style={{userSelect:"none"}}>
             {" "}
             Crea tu Mueble ideal para que sea <br />
             <span className="resaltar">Único</span> e{" "}
