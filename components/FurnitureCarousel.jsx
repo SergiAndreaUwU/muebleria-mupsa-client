@@ -1,49 +1,24 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 
-function FurnitureCarousel() {
+function FurnitureCarousel({imagesArray}) {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="https://static.wikia.nocookie.net/espokemon/images/7/77/Pikachu.png/revision/latest/scale-to-width-down/1000?cb=20150621181250"
-          alt="First slide"
-          width={"300px"}
-          height={"300px"}
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+    <Carousel variant="dark" indicators={false}>
+    {imagesArray.map((imag, index) => (
+      <Carousel.Item key={imag}>
+        <div style={{ display: "flex" }}>
+          <div style={{ margin: "auto",width: '100%', height: '85vh', position: 'relative' }}>
+            <Image
+              src={imag}
+              alt={`${index} slide`}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </div>
       </Carousel.Item>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="https://static.wikia.nocookie.net/espokemon/images/7/77/Pikachu.png/revision/latest/scale-to-width-down/1000?cb=20150621181250"
-          alt="First slide"
-          width={"300px"}
-          height={"300px"}
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="https://static.wikia.nocookie.net/espokemon/images/7/77/Pikachu.png/revision/latest/scale-to-width-down/1000?cb=20150621181250"
-          alt="First slide"
-          width={"300px"}
-          height={"300px"}
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    ))}
+  </Carousel>
   );
 }
 

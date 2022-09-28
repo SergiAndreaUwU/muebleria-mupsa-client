@@ -14,7 +14,7 @@ function Footer() {
   return (
     <Container>
     <footer id="footer" className={styles.footer}>
-      Datos de contacto:
+      <span style={{marginLeft:"15px"}}>Datos de contacto:</span>
       <ListGroup variant="flush">
         <ListGroup.Item>Nos ubicamos en {ubication}</ListGroup.Item>
         <ListGroup.Item>Llamanos al: {contactNumbers}</ListGroup.Item>
