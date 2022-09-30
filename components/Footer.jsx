@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import UbicationImage from "/public/ubication.jpg";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
-import Mueble11 from "/public/catalogo/mueble11.jpeg"
+import Mueble11 from "/public/catalogo/mueble11.jpeg";
 
 const ubication =
   "Calle torrecillas #5 Colonia la Grangena Municipio de Poncitlan";
@@ -28,18 +28,30 @@ function Footer() {
                 ven a visitarnos a: <br />
                 {ubication}
                 <hr />
-                llamanos al:{" "}
+                llamanos al:<br/>
                 <span style={{ textDecoration: "underline" }}>
                   {contactNumbers}
                 </span>
-                <hr />o mandanos un mensaje por WhatsApp:{" "}
+                <hr />ó mandanos un mensaje por WhatsApp:<br/>
                 <span style={{ textDecoration: "underline" }}>
                   {whatsappNumber}
                 </span>
-                <hr />ó enviarnos un correo a:
+                <hr />ó enviarnos un correo a: <br/>
                 <span style={{ textDecoration: "underline" }}>
                   {contactEmail}
                 </span>
+              </Col>
+              <Col lg={6} md={12}>
+                <Image
+                  alt="Muebles_Mupsa"
+                  src={Mueble11}
+                  width={300}
+                  height={300}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{ span: 5, offset: 2 }} md={12}>
                 <Image
                   alt="ubicacion"
                   src={UbicationImage}
@@ -54,14 +66,6 @@ function Footer() {
                       )
                       .focus();
                   }}
-                />
-              </Col>
-              <Col lg={6} md={12}>
-              <Image
-                  alt="Muebles_Mupsa"
-                  src={Mueble11}
-                  width={300}
-                  height={300}
                 />
               </Col>
             </Row>
