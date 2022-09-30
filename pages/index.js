@@ -118,13 +118,13 @@ export default function Home() {
         }}
       >
         <div style={{ margin: "auto" }}>
-          <Image alt="Mupsa_Logo" src={Logo} height={550}/>
+          <Image alt="Mupsa_Logo" src={Logo} height={650}/>
         </div>
       </div>
       <div
         style={{
           width: "100%",
-          height: "20vh",
+          height: "12vh",
           backgroundColor: "black",
           color: "white",
           textAlign: "center",
