@@ -1,14 +1,22 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import styles from "./FurnitureNavbar.module.sass";
-import Logo from "/public/muebleria_mupsa_ico.ico";
-import Image from "next/image";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function FurnitureNavbar() {
   return (
     <div className={styles.navbar}>
+      <div style={{ display: "flex", height: "100%" }}>
+        <div style={{ margin: "auto" }}>
+          <h2 style={{ color: "white", userSelect: "none" }}>
+            Muebleria MUPSA
+          </h2>
+        </div>
+      </div>
+      {/* dropdown */}
+      <div className={styles.hamburgerButtonMenu}>
+        <GiHamburgerMenu size={35} color={"white"} />
+      </div>
 
+      {/* end of dropdown */}
     </div>
   );
 }
