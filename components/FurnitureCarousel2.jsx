@@ -4,7 +4,7 @@ import LandingImage2 from "/public/landingPage/landing2.png";
 
 function FurnitureCarousel() {
   return (
-    <div style={{ display: "flex", width: "100vw", backgroundColor: "black" }}>
+    <div style={{ display: "flex", width: "100vw", backgroundColor: "black",maxWidth:"100%" }}>
       <div style={{ marginLeft: "auto", marginRight: "auto", width: "50vw" }}>
         <Carousel controls={false} indicators={false} keyboard={false}>
           <Carousel.Item>

@@ -28,18 +28,21 @@ function Footer() {
                 ven a visitarnos a: <br />
                 {ubication}
                 <hr />
-                llamanos al:<br/>
+                llamanos al:
+                <br />
                 <span style={{ textDecoration: "underline" }}>
                   {contactNumbers}
                 </span>
-                <hr />ó mandanos un mensaje por WhatsApp:<br/>
+                <hr />ó mandanos un mensaje por WhatsApp:
+                <br />
                 <span style={{ textDecoration: "underline" }}>
                   {whatsappNumber}
                 </span>
-                <hr />ó enviarnos un correo a: <br/>
+                <hr />ó enviarnos un correo a: <br />
                 <span style={{ textDecoration: "underline" }}>
                   {contactEmail}
                 </span>
+                <hr />ó visitanos: <br />
               </Col>
               <Col lg={6} md={12}>
                 <Image
