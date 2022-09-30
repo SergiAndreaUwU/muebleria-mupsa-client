@@ -5,12 +5,13 @@ import { Container } from "react-bootstrap";
 
 function CatalogueCarousel({ imagesArray }) {
   return (
+    <div style={{backgroundColor:"rgb(22, 22, 22);"}}>
     <Container>
       <Carousel variant="dark" indicators={false}>
         {imagesArray.map((imag, index) => (
           <Carousel.Item key={imag}>
             <div style={{ display: "flex" }}>
-              <div style={{ margin: "auto",width: '100%', height: '85vh', position: 'relative' }}>
+              <div style={{ margin: "auto",width: '100%', height: '45vh', position: 'relative' }}>
                 <Image
                   src={imag}
                   alt={`${index} slide`}
@@ -23,6 +24,7 @@ function CatalogueCarousel({ imagesArray }) {
         ))}
       </Carousel>
     </Container>
+    </div>
   );
 }
 

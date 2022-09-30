@@ -7,24 +7,9 @@ import Image from "next/image";
 
 function FurnitureNavbar() {
   return (
-    <Navbar
-      bg="dark"
-      variant="dark"
-      expand="lg"
-      sticky="top"
-      className={styles.navbar}
-    >
-      <Container>
-        <Navbar.Brand href="/">MUPSA</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/catalogo">Catalogo</Nav.Link>
-            {/* <Nav.Link href="/quienesSomos">Quienes somos</Nav.Link> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className={styles.navbar}>
+
+    </div>
   );
 }
 
