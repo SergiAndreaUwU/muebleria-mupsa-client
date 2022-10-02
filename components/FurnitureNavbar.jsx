@@ -7,7 +7,7 @@ function FurnitureNavbar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <>
+    <div>
     <Sidebar show={showSidebar} close={()=>{setShowSidebar(false)}}/>
     <div className={styles.navbar}>
       <div style={{ display: "flex", height: "100%" }}>
@@ -29,7 +29,7 @@ function FurnitureNavbar() {
 
       {/* end of dropdown */}
     </div>
-    </>
+    </div>
   );
 }
 
