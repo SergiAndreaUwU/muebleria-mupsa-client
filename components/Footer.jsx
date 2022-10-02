@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 import Mueble11 from "/public/catalogo/mueble11.jpeg";
 
+import { useMediaQuery } from "react-responsive";
+
 const ubication =
   "Calle torrecillas #5 Colonia la Grangena Municipio de Poncitlan";
 const contactNumbers = "392-142-4867";
@@ -12,6 +14,8 @@ const whatsappNumber = "392-141-8600";
 const contactEmail = "MupsaForniture@gmail.com";
 
 function Footer() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
   return (
     <div className={styles.customContainer}>
       <Container>
@@ -44,14 +48,16 @@ function Footer() {
                 </span>
                 <hr />ó visitanos: <br />
               </Col>
-              <Col lg={6} md={12}>
-                <Image
-                  alt="Muebles_Mupsa"
-                  src={Mueble11}
-                  width={300}
-                  height={300}
-                />
-              </Col>
+              {!isTabletOrMobile && (
+                <Col lg={6} md={12}>
+                  <Image
+                    alt="Muebles_Mupsa"
+                    src={Mueble11}
+                    width={300}
+                    height={300}
+                  />
+                </Col>
+              )}
             </Row>
             <Row>
               <Col lg={{ span: 5, offset: 2 }} md={12}>
