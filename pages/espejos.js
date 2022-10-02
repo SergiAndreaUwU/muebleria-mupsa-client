@@ -4,21 +4,21 @@ import MainTemplate from "../components/MainTemplate"
 import { Container,Row,Col } from 'react-bootstrap';
 import Image from 'next/image';
 
-import MuebleImg1 from "/public/espejos/mueble1.jpeg";
-import MuebleImg2 from "/public/espejos/mueble2.jpeg";
-import MuebleImg3 from "/public/espejos/mueble3.jpeg";
-import MuebleImg4 from "/public/espejos/mueble4.jpeg";
-import MuebleImg5 from "/public/espejos/mueble5.jpeg";
-import MuebleImg6 from "/public/espejos/mueble6.jpeg";
-import MuebleImg7 from "/public/espejos/mueble7.jpeg";
-import MuebleImg8 from "/public/espejos/mueble8.jpeg";
-import MuebleImg9 from "/public/espejos/mueble9.jpeg";
+import MuebleImg1 from "/public/espejos/Mueble1.jpeg";
+import MuebleImg2 from "/public/espejos/Mueble2.jpeg";
+import MuebleImg3 from "/public/espejos/Mueble3.jpeg";
+import MuebleImg4 from "/public/espejos/Mueble4.jpeg";
+import MuebleImg5 from "/public/espejos/Mueble5.jpeg";
+import MuebleImg6 from "/public/espejos/Mueble6.jpeg";
+import MuebleImg7 from "/public/espejos/Mueble7.jpeg";
+import MuebleImg8 from "/public/espejos/Mueble8.jpeg";
+import MuebleImg9 from "/public/espejos/Mueble9.jpeg";
 
-import MuebleImg10 from "/public/espejos/mueble10.jpeg";
-import MuebleImg11 from "/public/espejos/mueble11.jpeg";
-import MuebleImg12 from "/public/espejos/mueble12.jpeg";
-import MuebleImg13 from "/public/espejos/mueble13.jpeg";
-import MuebleImg14 from "/public/espejos/mueble14.jpeg";
+import MuebleImg10 from "/public/espejos/Mueble10.jpeg";
+import MuebleImg11 from "/public/espejos/Mueble11.jpeg";
+import MuebleImg12 from "/public/espejos/Mueble12.jpeg";
+import MuebleImg13 from "/public/espejos/Mueble13.jpeg";
+import MuebleImg14 from "/public/espejos/Mueble14.jpeg";
 
 
 function Espejos() {

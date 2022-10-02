@@ -4,10 +4,10 @@ import MainTemplate from "../components/MainTemplate";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
-import MuebleImg1 from "/public/mesasCentro/mueble1.jpeg";
-import MuebleImg2 from "/public/mesasCentro/mueble2.jpeg";
-import MuebleImg3 from "/public/mesasCentro/mueble3.jpeg";
-import MuebleImg4 from "/public/mesasCentro/mueble4.jpeg";
+import MuebleImg1 from "/public/mesasCentro/Mueble1.jpeg";
+import MuebleImg2 from "/public/mesasCentro/Mueble2.jpeg";
+import MuebleImg3 from "/public/mesasCentro/Mueble3.jpeg";
+import MuebleImg4 from "/public/mesasCentro/Mueble4.jpeg";
 
 function MesasCentro() {
   const imagesArray = [MuebleImg1, MuebleImg2, MuebleImg3, MuebleImg4];

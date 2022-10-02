@@ -4,11 +4,11 @@ import MainTemplate from "../components/MainTemplate";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
-import MuebleImg1 from "/public/escritorios/mueble1.jpeg";
-import MuebleImg2 from "/public/escritorios/mueble2.jpeg";
-import MuebleImg3 from "/public/escritorios/mueble3.jpeg";
-import MuebleImg4 from "/public/escritorios/mueble4.jpeg";
-import MuebleImg5 from "/public/escritorios/mueble5.jpeg";
+import MuebleImg1 from "/public/escritorios/Mueble1.jpeg";
+import MuebleImg2 from "/public/escritorios/Mueble2.jpeg";
+import MuebleImg3 from "/public/escritorios/Mueble3.jpeg";
+import MuebleImg4 from "/public/escritorios/Mueble4.jpeg";
+import MuebleImg5 from "/public/escritorios/Mueble5.jpeg";
 
 function Escritorios() {
   const imagesArray = [
